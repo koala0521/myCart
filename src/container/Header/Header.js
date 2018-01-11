@@ -38,11 +38,11 @@ export default function Header(props) {
                         </li>
 
                         {/* <!--active--> */}
-                        {
-                            {/*
+                        {/*
+                            {
                                 isCartIconShow === true ? (<CartPanel/>) : null
-                            */}
-                        }
+                            }
+                        */}
                     </ul>
                     <ul className="nav-list">
                         <li><Link to="/">在线商城</Link></li>
