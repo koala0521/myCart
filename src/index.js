@@ -3,6 +3,8 @@ import { ConnectedRouter } from 'react-router-redux';
 import { configureStore , createHistory } from './store';
 import  routers from './app';
 
+import "common/style/reset.css";
+
 
 function render() {
     ReactDOM.render(
