@@ -2,12 +2,13 @@
 .nav-global{
 	height: 100px;
 	background-color: #000;
-    z-index: 999
+    z-index: 999;
+    display:flex;
+    justify-content:center;
 }
 .container{
 	height: 100%;
 	width: 1220px;
-	margin: 0 auto;
 }
 /*logo*/
 .nav-logo{
@@ -82,7 +83,7 @@
     top: -3000px;
     width: 168px;
     left: 50%;
-    margin-left: -70px;
+    margin-left: -84px;
 }
 .nav-user:hover .nav-user-wrapper{
     top: 18px;
@@ -109,7 +110,7 @@
     height: 8px;
     left: 50%;
     top: -8px;
-    margin-left: -25px;
+    margin-left: -10px;
 }
 .nav-user-avatar>dd{
 	display: block;
