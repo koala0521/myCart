@@ -1,4 +1,4 @@
-// 项目主导航栏，以为涉及到购物车，所有放在了容器组件中。
+// 项目主导航栏，因为涉及到购物车，所有放在了容器组件中。
 
 // 4.2版本把 react-router 分成几个模块 ， react-router-dom 专门做 DOM 绑定使用
 import { Link, NavLink } from 'react-router-dom'
