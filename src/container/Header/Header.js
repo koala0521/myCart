@@ -3,11 +3,14 @@
 // 4.2版本把 react-router 分成几个模块 ， react-router-dom 专门做 DOM 绑定使用
 import { Link, NavLink } from 'react-router-dom'
 
+import CartPanel from 'container/cartPanel'
+
 import './header.css';
 
 export default function Header(props) {
 
-    let { isCartIconShow } = props;    // 决定购物车按钮是否显示
+    let { isCartIocnShow } = props;    // 决定购物车按钮是否显示
+
     return (
         <div id="header">
             <div className="nav-global">
@@ -36,13 +39,11 @@ export default function Header(props) {
                                 </div>
                             </div>
                         </li>
-
-                        {/* <!--active--> */}
-                        {/*
-                            {
-                                isCartIconShow === true ? (<CartPanel/>) : null
-                            }
-                        */}
+                        
+                        {
+                            isCartIocnShow === true ? (<CartPanel/>) : null
+                        }
+                       
                     </ul>
                     <ul className="nav-list">
                         <li><Link to="/">在线商城</Link></li>
@@ -61,6 +62,7 @@ export default function Header(props) {
     
 }
 
+// 默认显示购物车图标
 Header.defaultProps = {
-    isCartIconShow:true
+    isCartIocnShow:true
 };
