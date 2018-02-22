@@ -6,7 +6,7 @@ import thunk from 'redux-thunk';
 import reducer from './reducers';//应用的 reducer
 let routerML = routerMiddleware( history );
 
-// 创建 store
+// 创建应用的唯一 store
 function configureStore() {
     // 生产环境，不需要开启 redux DevTools
     let store;
