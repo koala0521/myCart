@@ -1,14 +1,15 @@
-import axios from 'axios';
+// import axios from 'axios';
+const axios =require('axios');
 
 // 查询商品数据
 let req = axios.create({
-    baseURL: 'http://192.168.10.102:5000/api',
+    baseURL: 'http://192.168.8.135:5000/api',
     // withCredentials: true,
     timeout: 10000
 });
 
 
-export default {
+module.exports = {
     /**
      * 获取商品数据
      * @param  {Object}    [params={}] ?page_size=20&category_id=60&page=1&sort=sort
@@ -25,10 +26,13 @@ export default {
         })
             .then(res=>{
                 if(res.status===200){
+
                     return res.data;
+
                 }else{
                     throw 'wrong';
                 }
+
             })
     },
 
