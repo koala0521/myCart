@@ -1,7 +1,7 @@
 import { Route , Redirect , NavLink  } from "react-router-dom";
 
-import ShopView from 'layout/shopLayout';
-import CartView from 'layout/cartLayout';
+import {ShopView} from 'src/route/Shop';
+import CartView from 'src/route/Cart';
 
 export default (
 
